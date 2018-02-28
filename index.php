@@ -4,7 +4,7 @@ require_once 'connection.php';
 $link = mysqli_connect($host, $user, $pswd, $database);
 
 
-/* проверка соединения */
+/* check connecting */
 if (mysqli_connect_errno()) {
     printf("Не удалось подключиться: %s\n", mysqli_connect_error());
     exit();
